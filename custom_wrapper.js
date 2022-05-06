@@ -1,6 +1,6 @@
 const axios = require("axios")
 
-const api_key = "5335519040:AAGAaNRLP1kLNSRfprqYf01m0HjUns3Krx4"
+const api_key = process.env.TELEGRAM_FACT_API_KEY
 
 function getUpdates() {
     return axios
