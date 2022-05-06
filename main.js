@@ -1,7 +1,7 @@
 const { Telegraf } = require("telegraf");
 const  axios  =  require("axios");
 
-const bot = new Telegraf("5335519040:AAGAaNRLP1kLNSRfprqYf01m0HjUns3Krx4");
+const bot = new Telegraf(process.env.TELEGRAM_FACT_API_KEY);
 
 
 bot.start((context) => context.reply("Sup"));
